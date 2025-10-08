@@ -9,14 +9,18 @@ body{
     margin:0;
     color:aliceblue;
     align-content: center;
+    background-color: rgb(235, 12, 201);
 }
 .container{
-    height:45vh;
+    height:50vh;
     width:25vw;
     border:2px solid black;
     /* margin:0 auto;*/
     background-color: black;
     border-radius: 2px;
+    overflow: auto;
+    margin-top: 10%;
+    border-radius: 10px;
 }
 #se{
     font-size: 1vw;

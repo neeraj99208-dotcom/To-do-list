@@ -8,12 +8,13 @@ let input = document.getElementById("tex");
     // alert("Please enter a task before adding!");
     return; // stop here if no text
   }
+if (list.children.length >= 10) {
+    // alert("You can only add up to 8 tasks!");
+    return;
+  }
 list.appendChild(newlist)
 newlist.textContent=document.getElementById("tex").value;
 document.getElementById("tex").value="";
-if(newlist==8){
-    input.display=false;
-}
 deleteTask(newlist);
 }
 function deleteTask(newlist){
